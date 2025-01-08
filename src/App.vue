@@ -1,5 +1,7 @@
 <script>
 
+import ConditionalRendering from "./ConditionalRendering.vue";
+
 export default {
   name: "App",
   data(){ 
@@ -36,6 +38,9 @@ export default {
         border: "1px solid darkred"
       }
     };
+  },
+  components: {
+    ConditionalRendering
   }
 }
 
@@ -47,11 +52,11 @@ export default {
     <div v-text="channel"></div> -->
     <!-- <div v-text="name">Hello</div> -->
 
-    <div v-html="channel"></div>
-    <div v-html="hack"></div>
+    <!-- <div v-html="channel"></div>
+    <div v-html="hack"></div> -->
     <!-- <div>{{ hack }}</div> -->
 
-    <h2 :id="headingId">Heading</h2>
+    <!-- <h2 :id="headingId">Heading</h2>
     <button :disabled="isDisabled">Bind</button>
 
     <h2 class="underline">Underlined Text</h2>
@@ -70,16 +75,18 @@ export default {
       'promoted': isPromoted,
       'new': !isSoldOut,
       'sold-out': isSoldOut
-    }">Object Conditional Movie</h2>
+    }">Object Conditional Movie</h2> -->
 
     <!-- <h2 :style="{color: highlightColor, 'font-size': headerSize + 'px'}">Inline Styles</h2> -->
-    <h2 :style="{color: highlightColor, fontSize: headerSize + 'px', padding: '20px'}">Inline Styles</h2>
+    <!-- <h2 :style="{color: highlightColor, fontSize: headerSize + 'px', padding: '20px'}">Inline Styles</h2>
 
     <h2 :style="headerStyleObject">Style Object</h2>
 
     <div :style="[baseStyleObject, successStyleObject]">Success Styles</div>
 
-  <div :style="[baseStyleObject, dangerStyleObject]">Danger Styles</div>
+  <div :style="[baseStyleObject, dangerStyleObject]">Danger Styles</div> -->
+
+   <ConditionalRendering />
 
   </div>
 </template>
