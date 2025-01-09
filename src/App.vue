@@ -1,6 +1,7 @@
 <script>
 
-import ConditionalRendering from "./ConditionalRendering.vue";
+// import ConditionalRendering from "./ConditionalRendering.vue";
+import Methods from './Methods.vue';
 
 export default {
   name: "App",
@@ -40,7 +41,7 @@ export default {
     };
   },
   components: {
-    ConditionalRendering
+    Methods
   }
 }
 
@@ -86,7 +87,9 @@ export default {
 
   <div :style="[baseStyleObject, dangerStyleObject]">Danger Styles</div> -->
 
-   <ConditionalRendering />
+   <!-- <ConditionalRendering /> -->
+
+   <Methods />
 
   </div>
 </template>
