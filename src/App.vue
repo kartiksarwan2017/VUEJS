@@ -2,7 +2,10 @@
 
 // import ConditionalRendering from "./ConditionalRendering.vue";
 // import Methods from './Methods.vue';
-import EventHandling from './EventHandling.vue';
+// import EventHandling from './EventHandling.vue';
+// import FormHandling from "./FormHandling.vue";
+   import ComputedProperty from './ComputedProperty.vue';
+
 
 export default {
   name: "App",
@@ -42,7 +45,7 @@ export default {
     };
   },
   components: {
-    EventHandling
+    ComputedProperty
   }
 }
 
@@ -90,7 +93,14 @@ export default {
 
    <!-- <ConditionalRendering /> -->
    <!-- <Methods /> -->
-    <EventHandling />
+   <!-- <EventHandling /> -->
+   <!-- <FormHandling />   -->
+
+   <!-- <h2 v-once>{{name}}</h2>
+   <button @click="name = 'Vishwas'">Change Name</button>
+   <h2 v-pre>{{name}}</h2> -->
+
+   <ComputedProperty />
 
   </div>
 </template>
