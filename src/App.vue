@@ -4,7 +4,8 @@
 // import Methods from './Methods.vue';
 // import EventHandling from './EventHandling.vue';
 // import FormHandling from "./FormHandling.vue";
-   import ComputedProperty from './ComputedProperty.vue';
+//  import ComputedProperty from './ComputedProperty.vue';
+import Watchers from './Watchers.vue';
 
 
 export default {
@@ -45,7 +46,7 @@ export default {
     };
   },
   components: {
-    ComputedProperty
+    Watchers
   }
 }
 
@@ -100,7 +101,9 @@ export default {
    <button @click="name = 'Vishwas'">Change Name</button>
    <h2 v-pre>{{name}}</h2> -->
 
-   <ComputedProperty />
+   <!-- <ComputedProperty /> -->
+
+   <Watchers />
 
   </div>
 </template>
